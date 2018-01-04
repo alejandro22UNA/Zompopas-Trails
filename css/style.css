@@ -1,0 +1,143 @@
+nav ul li a,a i{
+    color: white;
+}
+p{
+    text-align: justify;
+}
+/*#_row1{background:#e1f5fe;}*/
+#_row2{
+    background: #eeeeee;
+}
+#_row1 {
+    background-color:#e1f5fe;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+
+.box{
+    width:300px;
+    height:300px;
+    margin:500px 50px;
+    background:red;
+    transition: 1.5s; /* THE DURATION */
+}
+
+.rotate.triggeredCSS3    {transform : rotate(360deg);}
+.scale.triggeredCSS3     {transform : scale(1.6); }
+.translate.triggeredCSS3 {transform : translate3d(400px,0,0); }
+
+
+
+
+.progress-pie-chart {
+width:200px;
+height: 200px;
+border-radius: 50%;
+background-color: #E5E5E5;
+position: relative;
+}
+.progress-pie-chart.gt-50 {
+background-color: #81CE97;
+}
+
+.ppc-progress {
+content: "";
+position: absolute;
+border-radius: 50%;
+left: calc(50% - 100px);
+top: calc(50% - 100px);
+width: 200px;
+height: 200px;
+clip: rect(0, 200px, 200px, 100px);
+}
+.ppc-progress .ppc-progress-fill {
+content: "";
+position: absolute;
+border-radius: 50%;
+left: calc(50% - 100px);
+top: calc(50% - 100px);
+width: 200px;
+height: 200px;
+clip: rect(0, 100px, 200px, 0);
+background: #81CE97;
+transform: rotate(60deg);
+}
+.gt-50 .ppc-progress {
+clip: rect(0, 100px, 200px, 0);
+}
+.gt-50 .ppc-progress .ppc-progress-fill {
+clip: rect(0, 200px, 200px, 100px);
+background: #E5E5E5;
+}
+
+.ppc-percents {
+content: "";
+position: absolute;
+border-radius: 50%;
+left: calc(50% - 173.91304px/2);
+top: calc(50% - 173.91304px/2);
+width: 173.91304px;
+height: 173.91304px;
+background: #fff;
+text-align: center;
+display: table;
+}
+.ppc-percents span {
+display: block;
+font-size: 2.6em;
+font-weight: bold;
+color: #81CE97;
+}
+
+.pcc-percents-wrapper {
+display: table-cell;
+vertical-align: middle;
+}
+
+.progress-pie-chart {
+margin: 50px auto 0;
+}
+
+.mainImg{
+    z-index: -1;
+    margin-top: -80px;
+}
+.navigatioBar{
+    background-color: transparent !important;
+    
+}
+.navigatioBar ul li a{
+    color: black !important;
+}
+nav a.button-collapse i {
+    color:black;
+}
+
+#buttonMainImg{
+ z-index: 5;
+ margin-top:-40%;
+ background-color: transparent !important;
+ color:black !important;
+ box-shadow: none;
+ border: 1px solid rgba(0, 0, 0, 0.678);
+}
+#buttonMainImg:hover{
+    background-color: rgba(111, 0, 255, 0.521) !important;
+    color:white !important;
+    border: 2px solid rgba(0, 0, 0, 0.568);
+}
